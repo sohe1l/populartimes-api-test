@@ -1,6 +1,20 @@
-import populartimes
+import sys, getopt, populartimes
 
-res = populartimes.get("AIzaSyCTmst6SvsOAQanZKNt-2pt6nuLoFf2kSA", ["bar"],(48.132986, 11.566126), (48.142199, 11.580047))
+def main(argv):
 
-print (res)
+  if(len(sys.argv) != 6):
+    print 'usage: test.py api venue-type x1 y1 x2 y2'
+    sys.exit(2)
 
+  api = sys.argv(0);
+  venueType = sys.argv(1);
+
+  x1 = sys.argv(2);
+  y1 = sys.argv(3);
+
+  x2 = sys.argv(4);
+  y2 = sys.argv(5);
+
+  res = populartimes.get(api, [venueType],(x1, y1), (x2, y2))
+
+  print (res)
