@@ -10,7 +10,7 @@ $y1 = "11.566126";
 $x2 = "48.142199";
 $y2 = "11.580047";
 
-$command = escapeshellcmd('/home/forge/default/public/populartimes-api-test/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2");
+$command = escapeshellcmd('python3 /home/forge/default/public/populartimes-api-test/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2");
 
 echo($command);
 
