@@ -10,7 +10,7 @@ $y1 = "11.566126";
 $x2 = "48.142199";
 $y2 = "11.580047";
 
-$command = escapeshellcmd('/usr/custom/test.py ' + API_KEY + " $type $x1 $y1 $x2 $y2");
+$command = escapeshellcmd('/usr/custom/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2");
 
 $output = shell_exec($command);
 
