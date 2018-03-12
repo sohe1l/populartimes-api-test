@@ -22,3 +22,6 @@ def main(argv):
   res = populartimes.get(api, [venueType],(x1, y1), (x2, y2))
 
   print (res)
+
+if __name__ == "__main__":
+   main(sys.argv[1:])
