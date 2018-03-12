@@ -13,11 +13,11 @@ def main(argv):
   api = sys.argv[1];
   venueType = sys.argv[2];
 
-  x1 = sys.argv[3];
-  y1 = sys.argv[4];
+  x1 = float(sys.argv[3]);
+  y1 = float(sys.argv[4]);
 
-  x2 = sys.argv[5];
-  y2 = sys.argv[6];
+  x2 = float(sys.argv[5]);
+  y2 = float(sys.argv[6]);
 
   res = populartimes.get(api, [venueType],(x1, y1), (x2, y2))
 
