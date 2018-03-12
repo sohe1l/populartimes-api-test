@@ -6,7 +6,7 @@ def main(argv):
 
   print(sys.argv) 
 
-  if(len(sys.argv) != 6):
+  if(len(sys.argv) != 7):
     print ('usage: test.py api venue-type x1 y1 x2 y2')
     sys.exit(2)
 
