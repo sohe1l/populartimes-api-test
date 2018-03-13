@@ -1,6 +1,9 @@
 <?php 
 
-define("API_KEY", "AIzaSyCTmst6SvsOAQanZKNt-2pt6nuLoFf2kSA");
+//define("API_KEY", "AIzaSyCTmst6SvsOAQanZKNt-2pt6nuLoFf2kSA");
+
+
+define("API_KEY", "AIzaSyDFhjkKdYs3f6ij_ktyRsFq8L8i89lMTbk");
 
 $type = "bar";
 
