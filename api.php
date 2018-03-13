@@ -21,9 +21,9 @@ $y2 = "-122.43363745117188";
 
 
 
-$command = escapeshellcmd('python3 /home/forge/default/public/populartimes-api-test/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2");
+$command = escapeshellcmd('python3 /home/forge/default/public/populartimes-api-test/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2 2>&1");
 
-echo($command);
+// echo($command);
 
 $output = shell_exec($command);
 
