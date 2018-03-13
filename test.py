@@ -17,11 +17,13 @@ def main(argv):
 
   res = populartimes.get(api, [venueType],(x1, y1), (x2, y2))
 
+  resStr = ''.join(res)
+
   f = open('/home/forge/default/public/populartimes-api-test/output', 'w')
-  f.write(res)
+  f.write(resStr)
   f.close()
 
-  print (res)
+  print (resStr)
 
 if __name__ == "__main__":
    main(sys.argv[1:])
