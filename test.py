@@ -1,4 +1,4 @@
-import sys, getopt, populartimes
+import sys, getopt, populartimes, json
 
 def main(argv):
 
@@ -17,7 +17,7 @@ def main(argv):
 
   res = populartimes.get(api, [venueType],(x1, y1), (x2, y2))
 
-  resStr = ''.join(res)
+  resStr = json.dumps(res, ensure_ascii=False)
 
   f = open('/home/forge/default/public/populartimes-api-test/output', 'w')
   f.write(resStr)
