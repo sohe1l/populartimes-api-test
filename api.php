@@ -32,7 +32,7 @@ $y2 = $_GET['lng2'];
 // $y2 = "-122.42462522888184";
 
 
-$command = escapeshellcmd('python3 /home/forge/default/public/populartimes-api/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2");
+$command = escapeshellcmd('python3 /home/forge/default/public/populartimes-api-test/test.py ' . API_KEY . " $type $x1 $y1 $x2 $y2");
 
 // echo($command);
 
